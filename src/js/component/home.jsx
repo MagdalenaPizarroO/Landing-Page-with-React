@@ -1,26 +1,31 @@
 import React from "react";
+import Card from "./card.jsx";
+// TODO ES COMPONENTE
+//un componente es una función que inicia con Mayúscula
+//los componentes son funciones que RETORNAN HTML
+//los componentes se llaman como si fueran una etiqueta HTML
+//si creamos un componente tiene que tener MAYUSCULA!!!
+//para importar:
+//import nombreFuncion from "./ubicación-archivo.jsx";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+function Cimiento(){
+	return <div>
 
-//create your first component
-const Home = () => {
-	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<h1>Landing page with React</h1>
+		<div className="row">
+			<Card/>
+			<Card/>
+			<Card/>
+			<Card/>
+			<Card/>
+			
 		</div>
-	);
-};
+	</div>
+}
 
-export default Home;
+
+//antes module.export, ahora export default "nombre componente"
+export default Cimiento;
+
+//se diferencian los componentes y las funciones, es que la primera son funciones que retornan HTML
+//funciones tienen que ser exportadas para poder utilizadas por otros archivos
