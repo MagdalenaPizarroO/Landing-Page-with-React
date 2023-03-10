@@ -13,6 +13,7 @@ function Cimiento(){
 
 		<h1>Landing page with React</h1>
 		<div className="row">
+			<Navbar />
 			<Card/>
 			<Card/>
 			<Card/>
