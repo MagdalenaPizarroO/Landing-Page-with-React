@@ -1,5 +1,7 @@
 import React from "react";
 import Card from "./card.jsx";
+import Navbar from "./navbar.jsx";
+import Jumbotron from "./jumbotron.jsx"
 // TODO ES COMPONENTE
 //un componente es una función que inicia con Mayúscula
 //los componentes son funciones que RETORNAN HTML
@@ -10,16 +12,13 @@ import Card from "./card.jsx";
 
 function Cimiento(){
 	return <div>
-
-		<h1>Landing page with React</h1>
 		<div className="row">
 			<Navbar />
+			<Jumbotron/>
 			<Card/>
 			<Card/>
 			<Card/>
 			<Card/>
-			<Card/>
-			
 		</div>
 	</div>
 }
