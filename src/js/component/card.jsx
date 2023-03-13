@@ -1,15 +1,24 @@
 import React from 'react'
+import PropTypes from "prop-types";
 
-function Card(){
+function Card(props){
     return <div className="card" style={{width: "18rem"}}>
-    <img src="https://i.pinimg.com/originals/53/e1/de/53e1deec43b5beb0adf0d8f3ce2b1be1.jpg" className="card-img-top" alt="..."/>
+    <img src={props.imageUrl} className="card-img-top" alt="..."/>
     <div className="card-body">
-      <h5 className="card-title">Card title</h5>
-      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" className="btn btn-primary">Go somewhere</a>
+      <h5 className="card-title">{props.title}</h5>
+      <p className="card-text">{props.description}</p>
+      <a href="#" className="btn btn-primary">{props.buttonLabel}</a>
     </div>
   </div>
 }
+
+Card.propTypes = {
+  title: PropTypes.string,
+  description: PropTypes.string,
+  imageUrl: PropTypes.string,
+  buttonLabel: PropTypes.string,
+}
+
 
 export default Card;
 //Los mandamientos de React
