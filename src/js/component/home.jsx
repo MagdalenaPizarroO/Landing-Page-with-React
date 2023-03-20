@@ -2,7 +2,8 @@ import React from "react";
 import Card from "./card.jsx";
 import Navbar from "./navbar.jsx";
 import Jumbotron from "./jumbotron.jsx";
-import Footer from "./footer.jsx"
+import Footer from "./footer.jsx";
+import Alert from "./alert.jsx";
 // TODO ES COMPONENTE
 //un componente es una función que inicia con Mayúscula
 //los componentes son funciones que RETORNAN HTML
@@ -46,6 +47,9 @@ function Cimiento(){
 					return <Card carta={value} /> 
 				})
 			}
+			{/* <Alert variant='primary'/>
+			<Alert variant='warning'/>
+			<Alert variant='warning'/> */}
 			<Footer/>
 		</div>
 	</div>
